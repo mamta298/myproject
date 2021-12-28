@@ -1,0 +1,35 @@
+Basic commands :
+1.pwd->current wokring directory
+2.cd-> change directory
+	$cd .. ->one directory up
+	$cd ->home directory
+	$cd -- ->to move to prevous directory
+
+3.ls ->list(content of the directory)
+	$ls -R  ->list all file in the sub directories as well
+	$ls -a  ->list hidden files
+	$ls -al -> list files and directories with details like size,owner ,etc
+4.cat ->concatenate or to list contents of file
+	$cat >filename                       ->creates a file
+	$cat file1 file2 >file3              ->joins file 1 and file2 and stores output in file3
+	$cat filename/tr a-zA-z >output.txt  -> upper to lower case
+
+5.cp  ->copy files
+	$cp filename  directory_path
+
+6.mv ->To move or rename file
+	$mv filename directoory_path
+		OR
+	$mv filename new_filename
+
+7.mkdir ->create a new directory
+	$mkdir music/newfile                  ->to generate new file inside directory
+	$mkdir -p music/another_file/newfile  ->to create new file in between existing files
+
+8.rmdir ->To remove empty directories
+
+9.rm ->to delete directory and its content
+	$rm -r directory ->deletes file and its all content 
+	NOTE: There is no undo
+
+10.touch ->to create empty file 
