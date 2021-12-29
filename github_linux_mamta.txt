@@ -1,0 +1,54 @@
+1. Installing git on linux:
+
+From your shell, install Git using apt-get:
+
+$ sudo apt-get update
+
+$ sudo apt-get install git
+
+Verify the installation was successful by typing git --version:
+$ git --version
+
+2.Configuring git:
+$git config -–global user.name “your_username”
+
+$git config -–global user.email “your_emailid”
+
+4.USING GIT
+step 1: Go to your github account and create a repository with a name(lets say name of your project). We are creating a repository with the name myproject
+
+step2: Make a folder with the name of your project and change your current directory to that  directory.
+$mkdir myproject
+$cd myproject
+
+Step 3: Now we want to initiate Git for this folder
+$git init
+
+Step 4: Now we will set up the remote, which tells git where the repository is located.
+
+$git remote add origin  https://github.com/your_username/myproject.git
+#We have now configured and installed git and, created and configured a repository. Lets say we have a simple file in the myproject folder helloworld.c and we want it to share it with a friend who is working on the same project.
+
+Step 5: To add this file we will type
+
+$git add helloworld.c
+
+Or if we have a lot of files to be transferred from the folder to our git account, then we can use the command.
+
+$git add .
+#This would transfer the file(s) in the list which we will later commit.
+
+Step 6: Next, when we are finished adding the files, then we will have to commit adding.
+
+$git commit -m ‘your_message’
+
+NOTE:For further steps there will be authentication needed for that git uses token ,which we have to create from the github website.
+
+Step 7: Next, we need to push the commit that we just made on to the repository at github
+$git push https://github.com/mamta298/myproject.git
+
+BASIC COMMANDS:
+$git remote -v ->to show the origins
+
+
+
